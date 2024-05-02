@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: bigstar-project-422017
+    schema: raw_data
+    freshness:
+      warn_after:
+        count: 24
+        period: hour
+    loaded_at_field:  "_airbyte_extracted_at"
+    tables:
+      #Generate Model
+      - name: customers
+      #Generate Model
+      - name: orders
+      #Generate Model
+      - name: products
+      #Generate Model
+      - name: order_items
+
+
+
